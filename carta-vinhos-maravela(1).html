@@ -20,7 +20,6 @@
 html { scroll-behavior: smooth; }
 body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant Garamond', Georgia, serif; overflow-x: hidden; }
 
-/* COVER */
 .cover { min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 3rem 2rem; position: relative; overflow: hidden; background: var(--oceano); }
 .cover::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(13,69,96,0.6) 0%, transparent 70%); pointer-events: none; }
 .fish-bg { position: absolute; opacity: 0.08; pointer-events: none; }
@@ -34,37 +33,31 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
 .scroll-hint svg { width: 15px; }
 @keyframes bob { 0%,100%{transform:translateY(0)} 50%{transform:translateY(7px)} }
 
-/* NAV */
 .nav-wrap { position: sticky; top: 0; z-index: 100; background: var(--espuma); border-bottom: 1px solid var(--divider); }
 .nav-inner { display: flex; overflow-x: auto; scrollbar-width: none; max-width: 640px; margin: 0 auto; padding: 0 1rem; }
 .nav-inner::-webkit-scrollbar { display: none; }
 .nav-tab { flex-shrink: 0; padding: 0.9rem 1rem; font-family: 'Cormorant Garamond', serif; font-size: 0.74rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); background: none; border: none; border-bottom: 2px solid transparent; cursor: pointer; text-decoration: none; display: block; transition: color 0.2s, border-color 0.2s; white-space: nowrap; }
 .nav-tab:hover, .nav-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
 
-/* CONTENT */
 .content { max-width: 640px; margin: 0 auto; padding: 0 1.25rem 6rem; }
 
-/* TAXA */
 .taxa { margin: 2rem 0 0; padding: 1rem 1.2rem; border: 1px solid var(--divider-gold); border-radius: 8px; background: rgba(218,152,72,0.04); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .taxa-name { font-family: 'Cormorant', serif; font-size: 1rem; font-weight: 500; color: var(--oceano); letter-spacing: 0.06em; }
 .taxa-sub { font-size: 0.67rem; letter-spacing: 0.12em; color: var(--muted); font-style: italic; margin-top: 0.12rem; }
 .taxa-price { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 500; color: var(--gold); white-space: nowrap; flex-shrink: 0; }
 
-/* CATEGORY */
 .cat { padding-top: 3.5rem; }
 .cat-header { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 2.2rem; padding-bottom: 1.4rem; border-bottom: 1px solid var(--divider-gold); }
 .cat-icon { width: 32px; height: 32px; margin-bottom: 0.6rem; opacity: 0.5; }
 .cat-title { font-family: 'Cormorant', serif; font-size: clamp(1.9rem,7.5vw,2.6rem); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--oceano); line-height: 1; }
 .cat-title em { display: block; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 300; font-size: 0.8em; letter-spacing: 0.05em; text-transform: none; color: var(--gold); margin-top: 0.2rem; }
 
-/* COUNTRY */
 .country-group { margin-bottom: 2rem; }
 .country-row { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem; }
 .c-line { flex: 1; height: 1px; background: var(--divider); }
 .c-flag { width: 18px; height: 13px; border-radius: 2px; overflow: hidden; flex-shrink: 0; display: block; }
 .c-name { font-size: 0.64rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); font-weight: 400; white-space: nowrap; }
 
-/* WINE ROW */
 .wine { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding: 0.72rem 0; border-bottom: 1px solid rgba(9,52,71,0.06); }
 .wine:last-child { border-bottom: none; }
 .wine-left { flex: 1; min-width: 0; }
@@ -72,10 +65,8 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
 .wine-vol { font-size: 0.68rem; letter-spacing: 0.1em; color: var(--muted); font-style: italic; font-weight: 300; margin-top: 0.12rem; }
 .wine-price { font-family: 'Cormorant Garamond', serif; font-size: clamp(0.98rem,3.6vw,1.08rem); font-weight: 500; color: var(--gold); white-space: nowrap; flex-shrink: 0; }
 
-/* SEPARATOR */
 .sep { display: flex; align-items: center; justify-content: center; margin: 3rem 0 0; opacity: 0.09; }
 
-/* FOOTER */
 .footer { text-align: center; padding: 3rem 2rem 4rem; border-top: 1px solid var(--divider); margin-top: 2rem; }
 .footer-name { font-family: 'Cormorant', serif; font-size: 1.3rem; font-weight: 300; letter-spacing: 0.34em; text-transform: uppercase; color: var(--oceano); opacity: 0.28; }
 .disclaimer { font-size: 0.65rem; color: var(--muted); letter-spacing: 0.1em; font-style: italic; margin-top: 1.2rem; }
@@ -86,7 +77,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
 </head>
 <body>
 
-<!-- COVER -->
 <section class="cover">
   <svg class="fish-bg fish-tl" viewBox="0 0 300 120" fill="none">
     <path d="M280 60C240 30 160 20 80 40 40 50 10 60 0 60 10 60 40 70 80 80 160 100 240 90 280 60Z" fill="#F6F6F6"/>
@@ -118,7 +108,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
   </div>
 </section>
 
-<!-- NAV -->
 <nav class="nav-wrap">
   <div class="nav-inner">
     <a class="nav-tab active" href="#espumantes">Espumantes</a>
@@ -132,7 +121,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
 
 <div class="content">
 
-  <!-- TAXA DE ROLHA -->
   <div class="taxa">
     <div>
       <p class="taxa-name">Taxa de Rolha</p>
@@ -141,7 +129,7 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     <p class="taxa-price">R$ 70,00</p>
   </div>
 
-  <!-- ══════════ ESPUMANTES ══════════ -->
+  <!-- ══ ESPUMANTES ══ -->
   <section class="cat" id="espumantes">
     <div class="cat-header">
       <svg class="cat-icon" viewBox="0 0 36 36" fill="none" stroke="#DA9848" stroke-width="1.2">
@@ -149,21 +137,19 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       </svg>
       <h2 class="cat-title">Espumantes<em>& bubbles</em></h2>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#009B3A"/><polygon points="3,7.5 11,1 19,7.5 11,14" fill="#FEDF00"/><circle cx="11" cy="7.5" r="4.2" fill="#002776"/><path d="M7.2 7.5Q11 5.5 14.8 7.5" stroke="white" stroke-width="0.8" fill="none"/></svg><span class="c-name">Brasil</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Miolo Brut Cuvée Tradit</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 187,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Casa Valduga Brut</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 266,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Faces Moscatel</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 120,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="7.3" height="15" fill="#002395"/><rect x="7.3" width="7.4" height="15" fill="#FFF"/><rect x="14.7" width="7.3" height="15" fill="#ED2939"/></svg><span class="c-name">França</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Champagne G.H. Mumm</p><p class="wine-vol">Champagne · 750 ml</p></div><p class="wine-price">R$ 740,00</p></div>
     </div>
   </section>
 
-  <!-- ══════════ BRANCOS ══════════ -->
+  <!-- ══ BRANCOS ══ -->
   <section class="cat" id="brancos">
     <div class="cat-header">
       <svg class="cat-icon" viewBox="0 0 36 36" fill="none" stroke="#DA9848" stroke-width="1.2">
@@ -171,17 +157,14 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       </svg>
       <h2 class="cat-title">Brancos<em>& whites</em></h2>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#007A4D"/><polygon points="0,0 8,7.5 0,15" fill="#000"/><polygon points="0,0 9,7.5 0,15" fill="#FFB81C"/><rect y="5.5" width="22" height="4" fill="#FFF"/><rect y="6.3" width="22" height="2.4" fill="#DE3831"/></svg><span class="c-name">África do Sul</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">African King Chenin Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 144,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="5" fill="#000"/><rect y="5" width="22" height="5" fill="#DD0000"/><rect y="10" width="22" height="5" fill="#FFCE00"/></svg><span class="c-name">Alemanha</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Villa Wolf Gewurztraminer Dr Loosen</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 212,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="5" fill="#74ACDF"/><rect y="5" width="22" height="5" fill="#FFF"/><rect y="10" width="22" height="5" fill="#74ACDF"/><circle cx="11" cy="7.5" r="2" fill="#F6B40E"/></svg><span class="c-name">Argentina</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Sexy Fish Blanc De Blancs</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 95,00</p></div>
@@ -191,14 +174,12 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       <div class="wine"><div class="wine-left"><p class="wine-name">Alamos Torrontés</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 231,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Alamos Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 243,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#009B3A"/><polygon points="3,7.5 11,1 19,7.5 11,14" fill="#FEDF00"/><circle cx="11" cy="7.5" r="4.2" fill="#002776"/><path d="M7.2 7.5Q11 5.5 14.8 7.5" stroke="white" stroke-width="0.8" fill="none"/></svg><span class="c-name">Brasil</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Pizzato Legno Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 316,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Miolo Reserva Sauvignon Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 147,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Luiz Argenta Terroir XXVII Chard Viog</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 140,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#D52B1E"/><rect width="22" height="7.5" fill="#FFF"/><rect width="7.5" height="7.5" fill="#0039A6"/><polygon points="3.75,1.5 4.7,4.3 7.5,4.3 5.3,6 6.1,8.8 3.75,7.1 1.4,8.8 2.2,6 0,4.3 2.8,4.3" fill="#FFF"/></svg><span class="c-name">Chile</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Tarapacá Gran Reserva Sauvignon Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 256,00</p></div>
@@ -206,26 +187,22 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       <div class="wine"><div class="wine-left"><p class="wine-name">I Heart Sauvignon Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 95,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Adobe Reserva Gewurztraminer</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 148,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="5" fill="#AA151B"/><rect y="5" width="22" height="5" fill="#F1BF00"/><rect y="10" width="22" height="5" fill="#AA151B"/></svg><span class="c-name">Espanha</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Muga Rioja Barrica</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 487,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="7.3" height="15" fill="#002395"/><rect x="7.3" width="7.4" height="15" fill="#FFF"/><rect x="14.7" width="7.3" height="15" fill="#ED2939"/></svg><span class="c-name">França</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Ted The Mule Branco</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 164,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Famille Perrin Côtes-du-Rhône</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 476,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Albert Bichot Chablis</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 605,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="7.3" height="15" fill="#009246"/><rect x="7.3" width="7.4" height="15" fill="#FFF"/><rect x="14.7" width="7.3" height="15" fill="#CE2B37"/></svg><span class="c-name">Itália</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Zibibbo Trisole Grillo DOC Sicilia</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 165,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Settesoli Pinot Grigio</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 136,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Freixenet Pinot Grigio</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 146,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#006600"/><rect width="8" height="15" fill="#FF0000"/><circle cx="8" cy="7.5" r="2.8" fill="#FFD700" stroke="#006600" stroke-width="0.4"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Terras Del Rei</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 110,00</p></div>
@@ -241,7 +218,7 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
   </section>
 
-  <!-- ══════════ ROSÉS ══════════ -->
+  <!-- ══ ROSÉS ══ -->
   <section class="cat" id="roses">
     <div class="cat-header">
       <svg class="cat-icon" viewBox="0 0 36 36" fill="none" stroke="#DA9848" stroke-width="1.2">
@@ -249,30 +226,25 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       </svg>
       <h2 class="cat-title">Rosés<em>& rosados</em></h2>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#009B3A"/><polygon points="3,7.5 11,1 19,7.5 11,14" fill="#FEDF00"/><circle cx="11" cy="7.5" r="4.2" fill="#002776"/><path d="M7.2 7.5Q11 5.5 14.8 7.5" stroke="white" stroke-width="0.8" fill="none"/></svg><span class="c-name">Brasil</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Miolo Brut Rosé Cuvée Tradit.</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 187,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="7.3" height="15" fill="#002395"/><rect x="7.3" width="7.4" height="15" fill="#FFF"/><rect x="14.7" width="7.3" height="15" fill="#ED2939"/></svg><span class="c-name">França</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Ted The Mule Rosé</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 163,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Calvet Côtes De Provence</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 244,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="7.3" height="15" fill="#009246"/><rect x="7.3" width="7.4" height="15" fill="#FFF"/><rect x="14.7" width="7.3" height="15" fill="#CE2B37"/></svg><span class="c-name">Itália</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Freixenet Italian Rosé</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 145,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#006600"/><rect width="8" height="15" fill="#FF0000"/><circle cx="8" cy="7.5" r="2.8" fill="#FFD700" stroke="#006600" stroke-width="0.4"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Caminhos Cruzados Rosé</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 189,00</p></div>
     </div>
   </section>
 
-  <!-- OCTOPUS -->
   <div class="sep">
     <svg width="56" height="48" viewBox="0 0 120 100" fill="none" stroke="#093447" stroke-width="1.5">
       <ellipse cx="60" cy="28" rx="22" ry="18"/><circle cx="53" cy="23" r="3"/><circle cx="67" cy="23" r="3"/>
@@ -285,7 +257,7 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </svg>
   </div>
 
-  <!-- ══════════ TINTOS ══════════ -->
+  <!-- ══ TINTOS ══ -->
   <section class="cat" id="tintos">
     <div class="cat-header">
       <svg class="cat-icon" viewBox="0 0 36 36" fill="none" stroke="#DA9848" stroke-width="1.2">
@@ -293,7 +265,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       </svg>
       <h2 class="cat-title">Tintos<em>& reds</em></h2>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="5" fill="#74ACDF"/><rect y="5" width="22" height="5" fill="#FFF"/><rect y="10" width="22" height="5" fill="#74ACDF"/><circle cx="11" cy="7.5" r="2" fill="#F6B40E"/></svg><span class="c-name">Argentina</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Rutini Encuentro Pinot Noir</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 222,00</p></div>
@@ -304,14 +275,12 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       <div class="wine"><div class="wine-left"><p class="wine-name">Alma Negra M Blend</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 409,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">90+ Andeluna Cabernet Franc</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 176,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#009B3A"/><polygon points="3,7.5 11,1 19,7.5 11,14" fill="#FEDF00"/><circle cx="11" cy="7.5" r="4.2" fill="#002776"/><path d="M7.2 7.5Q11 5.5 14.8 7.5" stroke="white" stroke-width="0.8" fill="none"/></svg><span class="c-name">Brasil</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Pizzato Merlot Reserva</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 225,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Pizzato DNA99 Single Vineyard Merlot</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 707,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Miolo Lote 43</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 506,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#D52B1E"/><rect width="22" height="7.5" fill="#FFF"/><rect width="7.5" height="7.5" fill="#0039A6"/><polygon points="3.75,1.5 4.7,4.3 7.5,4.3 5.3,6 6.1,8.8 3.75,7.1 1.4,8.8 2.2,6 0,4.3 2.8,4.3" fill="#FFF"/></svg><span class="c-name">Chile</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">VIK Milla Cala</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 532,00</p></div>
@@ -320,23 +289,19 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       <div class="wine"><div class="wine-left"><p class="wine-name">Lapostolle Apalta</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 412,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">I Heart Cabernet Sauvignon</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 95,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="5" fill="#AA151B"/><rect y="5" width="22" height="5" fill="#F1BF00"/><rect y="10" width="22" height="5" fill="#AA151B"/></svg><span class="c-name">Espanha</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Tierra De Alcazar Crianza</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 136,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Finca Resalso (Emilio Moro)</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 401,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#B22234"/><rect y="1.15" width="22" height="1.15" fill="#FFF"/><rect y="3.46" width="22" height="1.15" fill="#FFF"/><rect y="5.77" width="22" height="1.15" fill="#FFF"/><rect y="8.08" width="22" height="1.15" fill="#FFF"/><rect y="10.38" width="22" height="1.15" fill="#FFF"/><rect y="12.69" width="22" height="1.15" fill="#FFF"/><rect width="9" height="8" fill="#3C3B6E"/></svg><span class="c-name">Estados Unidos</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Ménage Trois Bourbon Cabernet Sauvignon</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 280,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="7.3" height="15" fill="#002395"/><rect x="7.3" width="7.4" height="15" fill="#FFF"/><rect x="14.7" width="7.3" height="15" fill="#ED2939"/></svg><span class="c-name">França</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Château Bel Air</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 300,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="7.3" height="15" fill="#009246"/><rect x="7.3" width="7.4" height="15" fill="#FFF"/><rect x="14.7" width="7.3" height="15" fill="#CE2B37"/></svg><span class="c-name">Itália</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Similaun Primitivo Manduria</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 258,00</p></div>
@@ -344,12 +309,11 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       <div class="wine"><div class="wine-left"><p class="wine-name">Montepulciano D'Abruzzo DOP Amarti</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 207,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Barolo Roversi</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 560,00</p></div>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#006600"/><rect width="8" height="15" fill="#FF0000"/><circle cx="8" cy="7.5" r="2.8" fill="#FFD700" stroke="#006600" stroke-width="0.4"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
-      <div class="wine"><div class="wine-left"><p class="wine-name">Qta Pacheca Superior Tinto 2023</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 172,00</p></div>
+      <div class="wine"><div class="wine-left"><p class="wine-name">Qta Pacheca Superior Tinto 2023</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 471,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Papa Figos</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 266,00</p></div>
-      <div class="wine"><div class="wine-left"><p class="wine-name">Pacheca Terroir DOC</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 471,00</p></div>
+      <div class="wine"><div class="wine-left"><p class="wine-name">Pacheca Terroir DOC</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 172,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Herdade Dos Grous</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 455,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Gaudio Reserva Tinto 2021</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 199,00</p></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Gaudio Classico Tinto 2022</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 129,00</p></div>
@@ -357,7 +321,7 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
   </section>
 
-  <!-- ══════════ TAÇAS ══════════ -->
+  <!-- ══ TAÇAS ══ -->
   <section class="cat" id="tacas">
     <div class="cat-header">
       <svg class="cat-icon" viewBox="0 0 36 36" fill="none" stroke="#DA9848" stroke-width="1.2">
@@ -365,7 +329,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       </svg>
       <h2 class="cat-title">Taças<em>& by the glass</em></h2>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#D52B1E"/><rect width="22" height="7.5" fill="#FFF"/><rect width="7.5" height="7.5" fill="#0039A6"/><polygon points="3.75,1.5 4.7,4.3 7.5,4.3 5.3,6 6.1,8.8 3.75,7.1 1.4,8.8 2.2,6 0,4.3 2.8,4.3" fill="#FFF"/></svg><span class="c-name">Chile</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">I Heart Sauvignon Blanc</p><p class="wine-vol">Branco · Taça 187,5 ml</p></div><p class="wine-price">R$ 28,00</p></div>
@@ -373,7 +336,7 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
   </section>
 
-  <!-- ══════════ PORTO ══════════ -->
+  <!-- ══ PORTO ══ -->
   <section class="cat" id="porto">
     <div class="cat-header">
       <svg class="cat-icon" viewBox="0 0 36 36" fill="none" stroke="#DA9848" stroke-width="1.2">
@@ -381,12 +344,10 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       </svg>
       <h2 class="cat-title">Porto<em>& fortified</em></h2>
     </div>
-
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag" viewBox="0 0 22 15"><rect width="22" height="15" fill="#006600"/><rect width="8" height="15" fill="#FF0000"/><circle cx="8" cy="7.5" r="2.8" fill="#FFD700" stroke="#006600" stroke-width="0.4"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
       <div class="wine"><div class="wine-left"><p class="wine-name">Vinho Taylor's Porto Tawny</p><p class="wine-vol">Porto · Cálice 50 ml</p></div><p class="wine-price">R$ 21,00</p></div>
     </div>
-
     <p class="disclaimer">* Preços em Reais. Sujeitos a alteração sem aviso prévio.</p>
   </section>
 
