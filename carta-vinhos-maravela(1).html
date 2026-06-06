@@ -90,6 +90,7 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
   <symbol id="flag-it" viewBox="0 0 22 15"><rect width="7.3" height="15" fill="#009246"/><rect x="7.3" width="7.4" height="15" fill="#FFF"/><rect x="14.7" width="7.3" height="15" fill="#CE2B37"/></symbol>
   <symbol id="flag-es" viewBox="0 0 22 15"><rect width="22" height="5" fill="#AA151B"/><rect y="5" width="22" height="5" fill="#F1BF00"/><rect y="10" width="22" height="5" fill="#AA151B"/></symbol>
   <symbol id="flag-us" viewBox="0 0 22 15"><rect width="22" height="15" fill="#B22234"/><rect y="1.15" width="22" height="1.15" fill="#FFF"/><rect y="3.46" width="22" height="1.15" fill="#FFF"/><rect y="5.77" width="22" height="1.15" fill="#FFF"/><rect y="8.08" width="22" height="1.15" fill="#FFF"/><rect y="10.38" width="22" height="1.15" fill="#FFF"/><rect y="12.69" width="22" height="1.15" fill="#FFF"/><rect width="9" height="8" fill="#3C3B6E"/></symbol>
+  <symbol id="flag-de" viewBox="0 0 22 15"><rect width="22" height="5" fill="#000"/><rect y="5" width="22" height="5" fill="#DD0000"/><rect y="10" width="22" height="5" fill="#FFCE00"/></symbol>
   <symbol id="flag-za" viewBox="0 0 22 15"><rect width="22" height="15" fill="#007A4D"/><polygon points="0,0 8,7.5 0,15" fill="#000"/><polygon points="0,0 9,7.5 0,15" fill="#FFB81C"/><rect y="5.5" width="22" height="4" fill="#FFF"/><rect y="6.3" width="22" height="2.4" fill="#DE3831"/></symbol>
 </svg>
 
@@ -114,7 +115,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     <a class="nav-tab" href="#tintos">Tintos</a>
     <a class="nav-tab" href="#meia">Meia Garrafa</a>
     <a class="nav-tab" href="#tacas">Taças</a>
-    <a class="nav-tab" href="#porto">Porto</a>
   </div>
 </nav>
 
@@ -127,7 +127,10 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
 </div>
 
 <div class="content">
-  <div class="taxa"><div><p class="taxa-name">Taxa de Rolha</p><p class="taxa-sub">Por garrafa · serviço incluso</p></div><p class="taxa-price">R$ 70,00</p></div>
+  <div class="taxa">
+    <div><p class="taxa-name">Taxa de Rolha</p><p class="taxa-sub">Por garrafa · serviço incluso</p></div>
+    <p class="taxa-price">R$ 70,00</p>
+  </div>
 
   <!-- ══ ESPUMANTES ══ -->
   <section class="cat" id="espumantes">
@@ -137,15 +140,14 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-br"/></svg><span class="c-name">Brasil</span><span class="c-line"></span></div>
-      <div class="wine" data-name="casa valduga brut 130 brasil"><div class="wine-left"><p class="wine-name">Casa Valduga Brut 130</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 348,00</p></div>
-      <div class="wine" data-name="espumante miolo cuvée brut brasil"><div class="wine-left"><p class="wine-name">Espumante Miolo Cuvée Brut</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 178,84</p></div>
-      <div class="wine" data-name="espumante miolo cuvée brut rosé brasil"><div class="wine-left"><p class="wine-name">Espumante Miolo Cuvée Brut Rosé</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 178,84</p></div>
-      <div class="wine" data-name="lidio carraro faces moscatel brasil"><div class="wine-left"><p class="wine-name">Lidio Carraro Faces Moscatel</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 138,00</p></div>
+      <div class="wine" data-name="casa valduga brut 130 brasil espumante"><div class="wine-left"><p class="wine-name">Casa Valduga Brut 130</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 348,00</p></div>
+      <div class="wine" data-name="espumante miolo cuvée brut brasil"><div class="wine-left"><p class="wine-name">Espumante Miolo Cuvée Brut</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 178,00</p></div>
+      <div class="wine" data-name="espumante miolo cuvée brut rosé brasil"><div class="wine-left"><p class="wine-name">Espumante Miolo Cuvée Brut Rosé</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 178,00</p></div>
+      <div class="wine" data-name="lidio carraro faces moscatel brasil espumante"><div class="wine-left"><p class="wine-name">Lidio Carraro Faces Moscatel</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 138,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-fr"/></svg><span class="c-name">França</span><span class="c-line"></span></div>
-      <div class="wine" data-name="espumante pol clément branco brut franca"><div class="wine-left"><p class="wine-name">Espumante Pol Clément Branco Brut</p><p class="wine-vol">Espumante · 750 ml</p></div><p class="wine-price">R$ 157,50</p></div>
-      <div class="wine" data-name="champagne gh mumm franca"><div class="wine-left"><p class="wine-name">Champagne G.H. Mumm</p><p class="wine-vol">Champagne · 750 ml</p></div><p class="wine-price">R$ 743,70</p></div>
+      <div class="wine" data-name="champagne gh mumm franca espumante"><div class="wine-left"><p class="wine-name">Champagne G.H. Mumm</p><p class="wine-vol">Champagne · 750 ml</p></div><p class="wine-price">R$ 743,00</p></div>
     </div>
   </section>
 
@@ -157,57 +159,52 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-za"/></svg><span class="c-name">África do Sul</span><span class="c-line"></span></div>
-      <div class="wine" data-name="african king chenin blanc africa do sul"><div class="wine-left"><p class="wine-name">African King Chenin Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 151,20</p></div>
-      <div class="wine" data-name="robertson winery chenin blanc africa do sul"><div class="wine-left"><p class="wine-name">Robertson Winery Chenin Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 178,50</p></div>
+      <div class="wine" data-name="african king chenin blanc africa do sul branco"><div class="wine-left"><p class="wine-name">African King Chenin Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 151,00</p></div>
+    </div>
+    <div class="country-group">
+      <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-de"/></svg><span class="c-name">Alemanha</span><span class="c-line"></span></div>
+      <div class="wine" data-name="villa wolf gewurztraminer alemanha branco"><div class="wine-left"><p class="wine-name">Villa Wolf Gewurztraminer</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 225,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-ar"/></svg><span class="c-name">Argentina</span><span class="c-line"></span></div>
-      <div class="wine" data-name="alamos chardonnay argentina"><div class="wine-left"><p class="wine-name">Alamos Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 232,00</p></div>
-      <div class="wine" data-name="alamos torrontés argentina"><div class="wine-left"><p class="wine-name">Alamos Torrontés</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 232,00</p></div>
-      <div class="wine" data-name="destino chardonnay argentina"><div class="wine-left"><p class="wine-name">Destino Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 140,30</p></div>
-      <div class="wine" data-name="susana balbo anubis chardonnay argentina"><div class="wine-left"><p class="wine-name">Susana Balbo Anubis Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 142,60</p></div>
-      <div class="wine" data-name="catena chardonnay argentina"><div class="wine-left"><p class="wine-name">Catena Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 386,00</p></div>
-      <div class="wine" data-name="rutini gewurztraminer argentina"><div class="wine-left"><p class="wine-name">Rutini Gewurztraminer</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 370,00</p></div>
+      <div class="wine" data-name="alamos chardonnay argentina branco"><div class="wine-left"><p class="wine-name">Alamos Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 232,00</p></div>
+      <div class="wine" data-name="alamos torrontés argentina branco"><div class="wine-left"><p class="wine-name">Alamos Torrontés</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 232,00</p></div>
+      <div class="wine" data-name="destino chardonnay argentina branco"><div class="wine-left"><p class="wine-name">Destino Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 140,00</p></div>
+      <div class="wine" data-name="susana balbo anubis chardonnay argentina branco"><div class="wine-left"><p class="wine-name">Susana Balbo Anubis Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 142,00</p></div>
+      <div class="wine" data-name="catena chardonnay argentina branco"><div class="wine-left"><p class="wine-name">Catena Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 386,00</p></div>
+      <div class="wine" data-name="rutini gewurztraminer argentina branco"><div class="wine-left"><p class="wine-name">Rutini Gewurztraminer</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 370,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-br"/></svg><span class="c-name">Brasil</span><span class="c-line"></span></div>
-      <div class="wine" data-name="pizzato legno chardonnay brasil"><div class="wine-left"><p class="wine-name">Pizzato Legno Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 326,00</p></div>
-      <div class="wine" data-name="miolo reserva sauvignon blanc brasil"><div class="wine-left"><p class="wine-name">Miolo Reserva Sauvignon Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 126,61</p></div>
-      <div class="wine" data-name="luiz argenta terroir xxvii brasil"><div class="wine-left"><p class="wine-name">Luiz Argenta Terroir XXVII</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 147,20</p></div>
+      <div class="wine" data-name="pizzato legno chardonnay brasil branco"><div class="wine-left"><p class="wine-name">Pizzato Legno Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 326,00</p></div>
+      <div class="wine" data-name="miolo reserva sauvignon blanc brasil branco"><div class="wine-left"><p class="wine-name">Miolo Reserva Sauvignon Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 126,00</p></div>
+      <div class="wine" data-name="luiz argenta terroir xxvii brasil branco"><div class="wine-left"><p class="wine-name">Luiz Argenta Terroir XXVII</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 147,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-cl"/></svg><span class="c-name">Chile</span><span class="c-line"></span></div>
-      <div class="wine" data-name="adobe riesling chile"><div class="wine-left"><p class="wine-name">Adobe Riesling</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 151,20</p></div>
-      <div class="wine" data-name="adobe reserva gewurztraminer chile"><div class="wine-left"><p class="wine-name">Adobe Reserva Gewurztraminer</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 165,60</p></div>
-      <div class="wine" data-name="mario gran reserva chardonnay chile"><div class="wine-left"><p class="wine-name">Mario Gran Reserva Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 148,43</p></div>
-      <div class="wine" data-name="tarapacá gran reserva sauvignon blanc chile"><div class="wine-left"><p class="wine-name">Tarapacá Gran Reserva Sauvignon Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 250,00</p></div>
-      <div class="wine" data-name="teresa alberto sauvignon blanc chardonnay gran reserva chile"><div class="wine-left"><p class="wine-name">Teresa A. Alberto Sauv. Blanc / Chardonnay Gran Res.</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 255,82</p></div>
-    </div>
-    <div class="country-group">
-      <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-es"/></svg><span class="c-name">Espanha</span><span class="c-line"></span></div>
-      <div class="wine" data-name="freixenet fino sauvignon blanc espanha"><div class="wine-left"><p class="wine-name">Freixenet Fino Sauvignon Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 158,40</p></div>
+      <div class="wine" data-name="adobe reserva gewurztraminer chile branco"><div class="wine-left"><p class="wine-name">Adobe Reserva Gewurztraminer</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 165,00</p></div>
+      <div class="wine" data-name="mario gran reserva chardonnay chile branco"><div class="wine-left"><p class="wine-name">Mario Gran Reserva Chardonnay</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 148,00</p></div>
+      <div class="wine" data-name="tarapacá gran reserva sauvignon blanc chile branco"><div class="wine-left"><p class="wine-name">Tarapacá Gran Reserva Sauvignon Blanc</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 250,00</p></div>
+      <div class="wine" data-name="teresa alberto sauvignon blanc chardonnay gran reserva chile branco"><div class="wine-left"><p class="wine-name">Teresa A. Alberto Sauv. Blanc / Chardonnay Gran Res.</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 255,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-fr"/></svg><span class="c-name">França</span><span class="c-line"></span></div>
-      <div class="wine" data-name="ted the mule chardonnay viognier franca"><div class="wine-left"><p class="wine-name">Ted The Mule Chardonnay/Viognier</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 171,60</p></div>
-      <div class="wine" data-name="albert bichot chablis franca"><div class="wine-left"><p class="wine-name">Albert Bichot Chablis</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 560,00</p></div>
+      <div class="wine" data-name="ted the mule chardonnay viognier franca branco"><div class="wine-left"><p class="wine-name">Ted The Mule Chardonnay/Viognier</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 171,00</p></div>
+      <div class="wine" data-name="albert bichot chablis franca branco"><div class="wine-left"><p class="wine-name">Albert Bichot Chablis</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 588,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-it"/></svg><span class="c-name">Itália</span><span class="c-line"></span></div>
-      <div class="wine" data-name="zibibbo doc trisole italia"><div class="wine-left"><p class="wine-name">Zibibbo DOC Trisole</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 181,08</p></div>
-      <div class="wine" data-name="freixenet pinot grigio italia"><div class="wine-left"><p class="wine-name">Freixenet Pinot Grigio</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 165,60</p></div>
-      <div class="wine" data-name="settesoli pinot grigio italia"><div class="wine-left"><p class="wine-name">Settesoli Pinot Grigio</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 152,74</p></div>
+      <div class="wine" data-name="freixenet pinot grigio italia branco"><div class="wine-left"><p class="wine-name">Freixenet Pinot Grigio</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 165,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-pt"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
-      <div class="wine" data-name="dueto portugal"><div class="wine-left"><p class="wine-name">Dueto</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 154,10</p></div>
-      <div class="wine" data-name="clandestino portugal"><div class="wine-left"><p class="wine-name">Clandestino</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 154,10</p></div>
-      <div class="wine" data-name="grande escolha casa do valle portugal"><div class="wine-left"><p class="wine-name">Grande Escolha - Casa do Valle</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 304,50</p></div>
-      <div class="wine" data-name="caminhos cruzados branco portugal"><div class="wine-left"><p class="wine-name">Caminhos Cruzados</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 176,40</p></div>
-      <div class="wine" data-name="monte velho esporao portugal"><div class="wine-left"><p class="wine-name">Monte Velho Esporão</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 167,70</p></div>
-      <div class="wine" data-name="herdade do moinho signature portugal"><div class="wine-left"><p class="wine-name">Herdade Do Moinho Signature</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 140,30</p></div>
-      <div class="wine" data-name="casa do valle branco portugal"><div class="wine-left"><p class="wine-name">Casa do Valle</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 176,40</p></div>
-      <div class="wine" data-name="catarina bacalhoa portugal"><div class="wine-left"><p class="wine-name">Catarina Bacalhôa</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 392,20</p></div>
+      <div class="wine" data-name="dueto portugal branco"><div class="wine-left"><p class="wine-name">Dueto</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 163,00</p></div>
+      <div class="wine" data-name="clandestino portugal branco"><div class="wine-left"><p class="wine-name">Clandestino</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 164,00</p></div>
+      <div class="wine" data-name="grande escolha casa do valle portugal branco"><div class="wine-left"><p class="wine-name">Grande Escolha - Casa do Valle</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 304,00</p></div>
+      <div class="wine" data-name="caminhos cruzados branco portugal"><div class="wine-left"><p class="wine-name">Caminhos Cruzados</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 176,00</p></div>
+      <div class="wine" data-name="monte velho esporao portugal branco"><div class="wine-left"><p class="wine-name">Monte Velho Esporão</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 167,00</p></div>
+      <div class="wine" data-name="herdade do moinho signature portugal branco"><div class="wine-left"><p class="wine-name">Herdade Do Moinho Signature</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 147,00</p></div>
+      <div class="wine" data-name="catarina bacalhoa portugal branco"><div class="wine-left"><p class="wine-name">Catarina Bacalhôa</p><p class="wine-vol">Branco · 750 ml</p></div><p class="wine-price">R$ 392,00</p></div>
     </div>
   </section>
 
@@ -219,8 +216,7 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-pt"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
-      <div class="wine" data-name="vinho verde esporao bico amarelo portugal"><div class="wine-left"><p class="wine-name">Vinho Verde Esporão Bico Amarelo</p><p class="wine-vol">Vinho Verde · 750 ml</p></div><p class="wine-price">R$ 150,00</p></div>
-      <div class="wine" data-name="alvarinho adamado casa do valle portugal"><div class="wine-left"><p class="wine-name">Alvarinho Adamado - Casa do Valle</p><p class="wine-vol">Vinho Verde · 750 ml</p></div><p class="wine-price">R$ 194,25</p></div>
+      <div class="wine" data-name="alvarinho adamado casa do valle portugal vinho verde"><div class="wine-left"><p class="wine-name">Alvarinho Adamado - Casa do Valle</p><p class="wine-vol">Vinho Verde · 750 ml</p></div><p class="wine-price">R$ 194,00</p></div>
     </div>
   </section>
 
@@ -232,11 +228,11 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-fr"/></svg><span class="c-name">França</span><span class="c-line"></span></div>
-      <div class="wine" data-name="calvet prestige provence franca"><div class="wine-left"><p class="wine-name">Calvet Prestige Provence</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 244,00</p></div>
+      <div class="wine" data-name="calvet prestige provence franca rose"><div class="wine-left"><p class="wine-name">Calvet Prestige Provence</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 244,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-pt"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
-      <div class="wine" data-name="caminhos cruzados rose portugal"><div class="wine-left"><p class="wine-name">Caminhos Cruzados</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 176,40</p></div>
+      <div class="wine" data-name="caminhos cruzados rose portugal"><div class="wine-left"><p class="wine-name">Caminhos Cruzados</p><p class="wine-vol">Rosé · 750 ml</p></div><p class="wine-price">R$ 176,00</p></div>
     </div>
   </section>
 
@@ -260,56 +256,49 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-ar"/></svg><span class="c-name">Argentina</span><span class="c-line"></span></div>
-      <div class="wine" data-name="andeluna 90+ cabernet franc argentina"><div class="wine-left"><p class="wine-name">Andeluna 90+ Cabernet Franc</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 176,00</p></div>
-      <div class="wine" data-name="alma negra m blend argentina"><div class="wine-left"><p class="wine-name">Alma Negra M Blend</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 404,00</p></div>
-      <div class="wine" data-name="alta vista estate premium cabernet franc argentina"><div class="wine-left"><p class="wine-name">Alta Vista Estate Premium Cabernet Franc</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 187,85</p></div>
-      <div class="wine" data-name="dv catena cabernet malbec argentina"><div class="wine-left"><p class="wine-name">Dv Catena Cabernet Malbec</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 450,30</p></div>
-      <div class="wine" data-name="rutini cabernet malbec argentina"><div class="wine-left"><p class="wine-name">Rutini Cabernet/Malbec</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 254,60</p></div>
-      <div class="wine" data-name="susana balbo anubis malbec argentina"><div class="wine-left"><p class="wine-name">Susana Balbo Anubis Malbec</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 142,60</p></div>
-      <div class="wine" data-name="susana balbo tradition malbec argentina"><div class="wine-left"><p class="wine-name">Susana Balbo Tradition Malbec</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 202,00</p></div>
-      <div class="wine" data-name="rutini encuentro pinot noir argentina"><div class="wine-left"><p class="wine-name">Rutini Encuentro Pinot Noir</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 234,00</p></div>
+      <div class="wine" data-name="alma negra m blend argentina tinto"><div class="wine-left"><p class="wine-name">Alma Negra M Blend</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 404,00</p></div>
+      <div class="wine" data-name="alta vista estate premium cabernet franc argentina tinto"><div class="wine-left"><p class="wine-name">Alta Vista Estate Premium Cabernet Franc</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 187,00</p></div>
+      <div class="wine" data-name="dv catena cabernet malbec argentina tinto"><div class="wine-left"><p class="wine-name">Dv Catena Cabernet Malbec</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 450,00</p></div>
+      <div class="wine" data-name="rutini cabernet malbec argentina tinto"><div class="wine-left"><p class="wine-name">Rutini Cabernet/Malbec</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 268,00</p></div>
+      <div class="wine" data-name="rutini encuentro pinot noir argentina tinto"><div class="wine-left"><p class="wine-name">Rutini Encuentro Pinot Noir</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 234,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-br"/></svg><span class="c-name">Brasil</span><span class="c-line"></span></div>
-      <div class="wine" data-name="pizzato dna 99 merlot brasil"><div class="wine-left"><p class="wine-name">Pizzato DNA 99 Merlot</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 618,80</p></div>
-      <div class="wine" data-name="pizzato merlot reserva brasil"><div class="wine-left"><p class="wine-name">Pizzato Merlot Reserva</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 236,00</p></div>
+      <div class="wine" data-name="miolo lote 43 brasil tinto"><div class="wine-left"><p class="wine-name">Miolo Lote 43</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 482,00</p></div>
+      <div class="wine" data-name="pizzato dna 99 merlot brasil tinto"><div class="wine-left"><p class="wine-name">Pizzato DNA 99 Merlot</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 618,00</p></div>
+      <div class="wine" data-name="pizzato merlot reserva brasil tinto"><div class="wine-left"><p class="wine-name">Pizzato Merlot Reserva</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 236,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-cl"/></svg><span class="c-name">Chile</span><span class="c-line"></span></div>
-      <div class="wine" data-name="mario gran reserva carmenere chile"><div class="wine-left"><p class="wine-name">Mario Gran Reserva Carménère</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 172,09</p></div>
-      <div class="wine" data-name="lapostolle apalta chile"><div class="wine-left"><p class="wine-name">Lapostolle Apalta</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 392,00</p></div>
-      <div class="wine" data-name="vik la piu belle chile"><div class="wine-left"><p class="wine-name">VIK La Piu Belle</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 996,86</p></div>
-      <div class="wine" data-name="vik milla cala chile"><div class="wine-left"><p class="wine-name">VIK Milla Cala</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 507,32</p></div>
+      <div class="wine" data-name="mario gran reserva carmenere chile tinto"><div class="wine-left"><p class="wine-name">Mario Gran Reserva Carménère</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 172,00</p></div>
+      <div class="wine" data-name="lapostolle apalta chile tinto"><div class="wine-left"><p class="wine-name">Lapostolle Apalta</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 392,00</p></div>
+      <div class="wine" data-name="vik la piu belle chile tinto"><div class="wine-left"><p class="wine-name">VIK La Piu Belle</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 996,00</p></div>
+      <div class="wine" data-name="vik milla cala chile tinto"><div class="wine-left"><p class="wine-name">VIK Milla Cala</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 507,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-es"/></svg><span class="c-name">Espanha</span><span class="c-line"></span></div>
-      <div class="wine" data-name="ramon de bilbao crianza espanha"><div class="wine-left"><p class="wine-name">Ramon De Bilbão Crianza</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 232,00</p></div>
-      <div class="wine" data-name="tierra de alcazar crianza espanha"><div class="wine-left"><p class="wine-name">Tierra De Alcázar Crianza</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 197,20</p></div>
-      <div class="wine" data-name="finca resalso emilio moro tempranillo espanha"><div class="wine-left"><p class="wine-name">Finca Resalso Emilio Moro Tempranillo</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 383,80</p></div>
+      <div class="wine" data-name="tierra de alcazar crianza espanha tinto"><div class="wine-left"><p class="wine-name">Tierra De Alcázar Crianza</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 197,00</p></div>
+      <div class="wine" data-name="finca resalso emilio moro tempranillo espanha tinto"><div class="wine-left"><p class="wine-name">Finca Resalso Emilio Moro Tempranillo</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 397,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-us"/></svg><span class="c-name">Estados Unidos</span><span class="c-line"></span></div>
-      <div class="wine" data-name="menage a trois bourbon cabernet sauvignon eua"><div class="wine-left"><p class="wine-name">Ménage À Trois Bourbon Cabernet Sauvignon</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 280,00</p></div>
-    </div>
-    <div class="country-group">
-      <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-fr"/></svg><span class="c-name">França</span><span class="c-line"></span></div>
-      <div class="wine" data-name="ted the mule tinto franca"><div class="wine-left"><p class="wine-name">Ted The Mule</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 179,40</p></div>
+      <div class="wine" data-name="menage trois bourbon cabernet sauvignon eua tinto"><div class="wine-left"><p class="wine-name">Ménage À Trois Bourbon Cabernet Sauvignon</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 280,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-it"/></svg><span class="c-name">Itália</span><span class="c-line"></span></div>
-      <div class="wine" data-name="barolo roversi italia"><div class="wine-left"><p class="wine-name">Barolo Roversi</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 560,00</p></div>
-      <div class="wine" data-name="amarone montresor italia"><div class="wine-left"><p class="wine-name">Amarone Montresor</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 680,00</p></div>
-      <div class="wine" data-name="montepulciano dabruzzo dop amarti italia"><div class="wine-left"><p class="wine-name">Montepulciano D'Abruzzo DOP Amarti</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 207,38</p></div>
-      <div class="wine" data-name="similaun primitivo di manduria italia"><div class="wine-left"><p class="wine-name">Similaun Primitivo Di Manduria</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 270,90</p></div>
+      <div class="wine" data-name="barolo roversi italia tinto"><div class="wine-left"><p class="wine-name">Barolo Roversi</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 560,00</p></div>
+      <div class="wine" data-name="amarone montresor italia tinto"><div class="wine-left"><p class="wine-name">Amarone Montresor</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 680,00</p></div>
+      <div class="wine" data-name="montepulciano dabruzzo dop amarti italia tinto"><div class="wine-left"><p class="wine-name">Montepulciano D'Abruzzo DOP Amarti</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 207,00</p></div>
+      <div class="wine" data-name="similaun primitivo di manduria italia tinto"><div class="wine-left"><p class="wine-name">Similaun Primitivo Di Manduria</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 270,00</p></div>
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-pt"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
-      <div class="wine" data-name="gaudio classico portugal"><div class="wine-left"><p class="wine-name">Gaudio Classico</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 146,20</p></div>
-      <div class="wine" data-name="gaudio reserva portugal"><div class="wine-left"><p class="wine-name">Gaudio Reserva</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 199,29</p></div>
-      <div class="wine" data-name="herdade dos grous portugal"><div class="wine-left"><p class="wine-name">Herdade Dos Grous</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 415,80</p></div>
-      <div class="wine" data-name="papa figos portugal"><div class="wine-left"><p class="wine-name">Papa Figos</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 274,00</p></div>
-      <div class="wine" data-name="silk spice portugal"><div class="wine-left"><p class="wine-name">Silk & Spice</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 218,00</p></div>
-      <div class="wine" data-name="caminhos cruzados tinto portugal"><div class="wine-left"><p class="wine-name">Caminhos Cruzados</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 194,75</p></div>
+      <div class="wine" data-name="gaudio classico portugal tinto"><div class="wine-left"><p class="wine-name">Gaudio Classico</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 146,00</p></div>
+      <div class="wine" data-name="gaudio reserva portugal tinto"><div class="wine-left"><p class="wine-name">Gaudio Reserva</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 199,00</p></div>
+      <div class="wine" data-name="pacheca reserva portugal tinto"><div class="wine-left"><p class="wine-name">Pacheca Reserva</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 193,00</p></div>
+      <div class="wine" data-name="pacheca superior portugal tinto"><div class="wine-left"><p class="wine-name">Pacheca Superior</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 252,00</p></div>
+      <div class="wine" data-name="papa figos portugal tinto"><div class="wine-left"><p class="wine-name">Papa Figos</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 274,00</p></div>
+      <div class="wine" data-name="caminhos cruzados tinto portugal"><div class="wine-left"><p class="wine-name">Caminhos Cruzados</p><p class="wine-vol">Tinto · 750 ml</p></div><p class="wine-price">R$ 194,00</p></div>
     </div>
   </section>
 
@@ -321,7 +310,7 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     </div>
     <div class="country-group">
       <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-cl"/></svg><span class="c-name">Chile</span><span class="c-line"></span></div>
-      <div class="wine" data-name="leon tarapaca cabernet sauvignon chile"><div class="wine-left"><p class="wine-name">Leon Tarapacá Cabernet Sauvignon</p><p class="wine-vol">Tinto · 375 ml</p></div><p class="wine-price">R$ 88,80</p></div>
+      <div class="wine" data-name="leon tarapaca cabernet sauvignon chile meia garrafa"><div class="wine-left"><p class="wine-name">Leon Tarapacá Cabernet Sauvignon</p><p class="wine-vol">Tinto · 375 ml</p></div><p class="wine-price">R$ 88,00</p></div>
     </div>
   </section>
 
@@ -332,31 +321,10 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
       <h2 class="cat-title">Taças<em>& by the glass</em></h2>
     </div>
     <div class="country-group">
-      <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-br"/></svg><span class="c-name">Brasil</span><span class="c-line"></span></div>
-      <div class="wine" data-name="lidio carraro faces chardonnay brasil"><div class="wine-left"><p class="wine-name">Lidio Carraro Faces Chardonnay</p><p class="wine-vol">Branco · Taça 187,5 ml</p></div><p class="wine-price">R$ 42,00</p></div>
-    </div>
-    <div class="country-group">
-      <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-cl"/></svg><span class="c-name">Chile</span><span class="c-line"></span></div>
-      <div class="wine" data-name="leon tarapaca sauvignon blanc chile"><div class="wine-left"><p class="wine-name">Leon Tarapacá Sauvignon Blanc</p><p class="wine-vol">Branco · Taça 187,5 ml</p></div><p class="wine-price">R$ 45,60</p></div>
-    </div>
-    <div class="country-group">
       <div class="country-row"><span class="c-line"></span><span class="c-name">Vinho da casa</span><span class="c-line"></span></div>
       <div class="wine" data-name="taca vinho branco da casa"><div class="wine-left"><p class="wine-name">Taça De Vinho Branco Da Casa</p><p class="casa-hint">Disponibilidade diária · consulte o garçom</p></div><p class="wine-price">R$ 28,00</p></div>
       <div class="wine" data-name="taca vinho tinto da casa"><div class="wine-left"><p class="wine-name">Taça De Vinho Tinto Da Casa</p><p class="casa-hint">Disponibilidade diária · consulte o garçom</p></div><p class="wine-price">R$ 28,00</p></div>
     </div>
-  </section>
-
-  <!-- ══ PORTO ══ -->
-  <section class="cat" id="porto">
-    <div class="cat-header">
-      <svg class="cat-icon" viewBox="0 0 36 36" fill="none" stroke="#DA9848" stroke-width="1.2"><rect x="8" y="10" width="20" height="18" rx="4"/><path d="M8 18Q18 15 28 18"/><path d="M8 22Q18 25 28 22"/><rect x="12" y="6" width="12" height="5" rx="2"/></svg>
-      <h2 class="cat-title">Porto<em>& fortified</em></h2>
-    </div>
-    <div class="country-group">
-      <div class="country-row"><span class="c-line"></span><svg class="c-flag"><use href="#flag-pt"/></svg><span class="c-name">Portugal</span><span class="c-line"></span></div>
-      <div class="wine" data-name="vinho do porto tawny taylors portugal"><div class="wine-left"><p class="wine-name">Vinho Do Porto Tawny Taylor's</p><p class="wine-vol">Porto · Cálice 50 ml</p></div><p class="wine-price">R$ 21,00</p></div>
-    </div>
-    <p class="disclaimer">* Preços em Reais. Sujeitos a alteração sem aviso prévio.</p>
   </section>
 
   <div class="no-results" id="no-results">Nenhum vinho encontrado para "<span id="no-results-term"></span>".</div>
@@ -368,7 +336,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
 (function () {
   var tabs     = document.querySelectorAll('.nav-tab');
   var sections = document.querySelectorAll('.cat');
-
   var obs = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) {
@@ -391,7 +358,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
   function norm(s) {
     return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s]/g,' ');
   }
-
   function doSearch(raw) {
     var term = norm(raw.trim());
     clearBtn.classList.toggle('visible', raw.length > 0);
@@ -413,7 +379,6 @@ body { background: var(--espuma); color: var(--oceano); font-family: 'Cormorant 
     noRes.style.display = found === 0 ? 'block' : 'none';
     if (found === 0) noResTerm.textContent = raw.trim();
   }
-
   input.addEventListener('input', function(){ doSearch(input.value); });
   clearBtn.addEventListener('click', function(){ input.value=''; doSearch(''); input.focus(); });
 }());
